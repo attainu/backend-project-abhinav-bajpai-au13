@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="registration-form">
+        <h1>Registration Form</h1>
+        <form action="#" method="post">
+            <p>First Name: </p>
+            <input type="text" name="firstname" placeholder="First Name">
+
+            <p>Last Name: </p>
+            <input type="text" name="Last Name" placeholder="Last Name">
+
+            <p>Birthday:</p>
+            <input type="date" id="birthday" name="birthday">
+
+            <p>Email: </p>
+            <input type="email" name="email" placeholder="Email">
+
+            <p>Password: </p>
+            <input type="password" name="password" placeholder="Password">
+
+            <p>Re-Enter Password: </p>
+            <input type="password" name="password" placeholder="Re-enter Password">
+
+            <p>Phone Number: </p>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <p>Address: </p>
+            <textarea rows="4" cols="50" name="comment" form="usrform">Enter Your Address</textarea>
+
+            <p>Gender: </p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="others">Others</label><br>
+
+            <button type="submit">Registration</button>
+
+        </form>
+    </div>
+</body>
+</html>
