@@ -45,7 +45,7 @@ router.post('/', function(req, res, next) {
 						});
 
 					}).sort({_id: -1}).limit(1);
-					res.send({"Success":"You are regestered,You can login now."});
+					res.send({"Success":"You are registered,You can login now."});
 				}else{
 					res.send({"Success":"Email is already used."});
 				}
@@ -76,7 +76,7 @@ router.post('/login', function (req, res, next) {
 				res.send({"Success":"Wrong password!"});
 			}
 		}else{
-			res.send({"Success":"This Email Is not regestered!"});
+			res.send({"Success":"This Email Is not registered!"});
 		}
 	});
 });
@@ -119,7 +119,7 @@ router.post('/forgetpass', function (req, res, next) {
 	User.findOne({email:req.body.email},function(err,data){
 		console.log(data);
 		if(!data){
-			res.send({"Success":"This Email Is not regestered!"});
+			res.send({"Success":"This Email Is not registered!"});
 		}else{
 			// res.send({"Success":"Success!"});
 			if (req.body.password==req.body.passwordConf) {
